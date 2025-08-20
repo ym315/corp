@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!--meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport" content="target-densitydpi=device-dpi, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width" />
+    <meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>GiftLetter Business Admin</title>
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/menu.js"></script>
+
+</head>
+
+<body>
+    <main class="main-common">
+        <article class="main-menu"></article>
+        <article class="main-content">
+            <h2>발송 내역 조회</h2>
+            
+            <section class="input-case">              
+                <div class="line">
+                    <label for="search-type">검색조건</label>
+                    <select name="" id="earch-type">
+                        <option selected="selected" value="">전체</option>
+                        <option value="1">이벤트명</option>
+                        <option value="2">상품명</option>
+                    </select>
+                    <input type="number" id="number-customer">
+                    <p class="input-txt">* 쿠폰번호를 입력하고 조회하는 경우 실시간으로 교환정보가 확인됩니다.(해피머니,틴캐시,도서문화,문화상품권,백화점상품권 등 일부 브랜드는 교환 확인 불가)</p>              
+                </div>
+                <div>
+                    <label>조회기간</label>
+                    <input type="date"> ~ <input type="date">      
+                    <button type="button" class="button-day">1일 이전</button>
+                    <button type="button" class="button-day">1일 이내</button>
+                    <button type="button" class="button-day">1주일 이내</button>
+                    <button type="button" class="button-day">1개월 이내</button>
+                    <button type="button"class="button-day">3개월 이내</button>                    
+
+                </div>  
+    
+            </section>
+            <section class="center">
+                    <button type="button" class="btn btn-normal">조회</button>
+            </section>            
+            <section>
+                <div class="btn-rightset">
+                    <button type="button" class="btn btn-blue">선택 엑셀 다운로드</button>
+                    <button type="button" class="btn btn-blue">전체 엑셀 다운로드</button>
+                </div>
+                
+                <div>
+                    <p>총 <span class="point-base">1,234</span>건</p>
+                </div>
+                
+                <div class="table-bg">
+                    <div class="table-case">
+                        <table class="common-table">
+                            <thead>
+                                <tr>
+                                    <td class="td-w-60"><input type="checkbox"></td>
+                                    <td class="td-w-60">순번</td>
+                                    <td class="td-w-200">발송일시</td>
+                                    <td class="td-w-200">거래번호</td>
+                                    <td class="td-w-200">수신자번호</td>
+                                    <td>쿠폰번호</td>
+                                    <td class="td-w-250">상품명</td>
+                                    <td>브랜드명</td>
+                                    <td>상품단가</td>
+                                    <td>공급조건</td>
+                                    <td>공급단가</td>
+                                    <td>발송비</td>
+                                    <td class="td-w-200">만료일자</td>
+                                    <td>상태정보</td>
+                                    <td>교환여부</td>
+                                    <td>교환일시</td>
+                                    <td>교환처</td>
+                                    <td class="td-w-150">단문 재전송</td>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>         
+                                   <td><input type="checkbox"></td>                         
+                                   <td>1</td>
+                                   <td>2025-08-12 오전 9:25</td>
+                                   <td>N0Y5S12J1325002</td>
+                                   <td></td>
+                                   <td>6AN9W36GV11****</td>
+                                   <td>[구글기프트코드] 1만5천원</td>
+                                   <td>구글플레이</td>
+                                   <td>15,000	</td>
+                                   <td>-2%	</td>
+                                   <td>14,700</td>
+                                   <td>0</td>
+                                   <td>2026-08-12</td>
+                                   <td>발송완료</td>
+                                   <td></td>
+                                   <td></td>
+                                   <td></td>
+                                   <td></td>                                   
+                                </tr>
+                                <tr>         
+                                   <td><input type="checkbox"></td>                         
+                                   <td>2</td>
+                                   <td>2025-05-31 오후 11:55</td>
+                                   <td>N0Y5F31XJ55001</td>
+                                   <td></td>
+                                   <td>KKSH5CDRBKY****</td>
+                                   <td>[배달의민족] 모바일상품권 1만원</td>
+                                   <td>배달의민족</td>
+                                   <td>10,000</td>
+                                   <td>0%</td>
+                                   <td>10,000</td>
+                                   <td>0</td>
+                                   <td>2025-07-30</td>
+                                   <td>발송완료</td>
+                                   <td></td>
+                                   <td></td>
+                                   <td></td>
+                                   <td></td>                                   
+                                </tr>
+                                <tr>         
+                                   <td><input type="checkbox"></td>                         
+                                   <td>3</td>
+                                   <td>2025-05-25 오후 11:00</td>
+                                   <td>N0Y5F31XJ44331</td>
+                                   <td></td>
+                                   <td>JYYH5CDRBKY****</td>
+                                   <td>[배달의민족] 모바일상품권 5천원권</td>
+                                   <td>배달의민족</td>
+                                   <td>10,000</td>
+                                   <td>0%</td>
+                                   <td>10,000</td>
+                                   <td>0</td>
+                                   <td>2025-07-30</td>
+                                   <td>발송완료</td>
+                                   <td></td>
+                                   <td></td>
+                                   <td></td>
+                                   <td></td>                                   
+                                </tr>
+                                
+                            </tbody>
+                            
+                        </table>
+                    </div>
+                    
+                    <ul class="navi">
+                        <li><<</li>
+                        <li class="on">1</li>
+                        <li>>></li>
+                    </ul>
+                </div>
+                
+            </section>
+        </article>
+    </main>
+
+    
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+        $(document).ready(function () {
+            // thead 체크박스
+            const $checkAll = $(".common-table thead tr td input[type='checkbox']");
+            // tbody 체크박스
+            const $checkboxes = $(".common-table tbody tr td input[type='checkbox']");
+
+            // 전체선택 / 해제
+            $checkAll.on("change", function () {
+                $checkboxes.prop("checked", $(this).prop("checked"));
+            });
+            $checkboxes.on("change", function () {
+                if ($checkboxes.length === $checkboxes.filter(":checked").length) {
+                    $checkAll.prop("checked", true);
+                } else {
+                    $checkAll.prop("checked", false);
+                }
+            });
+        });
+</script>
+</body>
+
+</html>

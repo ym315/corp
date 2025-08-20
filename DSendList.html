@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!--meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport" content="target-densitydpi=device-dpi, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width" />
+    <meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>GiftLetter Business Admin</title>
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/menu.js"></script>
+
+</head>
+
+<body>
+    <main class="main-common">
+        <article class="main-menu"></article>
+        <article class="main-content">
+            <h2>직접 발송 목록</h2>
+            
+            <section class="input-case">              
+                <div>
+                    <label for="search-type">검색조건</label>
+                    <select name="" id="earch-type">
+                        <option selected="selected" value="">전체</option>
+                        <option value="1">이벤트명</option>
+                        <option value="2">상품명</option>
+                    </select>
+                    <input type="number" id="number-customer">                    
+                </div>
+    
+            </section>
+            <section class="center">
+                    <button type="button" class="btn btn-normal">조회</button>
+            </section>            
+            <section>
+                <div class="btn-rightset">
+                    <button type="button" class="btn btn-blue">신규 등록</button>
+                </div>
+
+                <div>
+                    <p>총 <span class="point-base">1,234</span>건</p>
+                </div>
+                
+                <div class="table-bg">
+                    <div class="table-case">
+                        <table class="common-table">
+                            <thead>
+                                <tr>
+                                    <td class="td-w-60">순번</td>
+                                    <td class="td-w-300">이벤트명</td>
+                                    <td>사용자명</td>
+                                    <td class="td-w-300">상품명</td>
+                                    <td>유효기간</td>
+                                    <td>공급조건</td>
+                                    <td>수수료</td>
+                                    <td>공급단가</td>
+                                    <td>판매가</td>
+                                    <td class="td-w-200">발송일</td>
+                                    <td>상태</td>
+                                </tr>
+                            </thead>
+                            <tbody class="cursor">
+                                <tr onclick="location.href='DSendView.html'">
+                                   <td>1</td>
+                                    <td>
+                                        <div class="td-long point-base">[와우패스] 도서리뷰 참여자 기프티콘 발송 도서리뷰 참여자 기프티콘 발송</div>
+                                    </td>
+                                    <td>wowpass</td>
+                                    <td>[배스킨라빈스] 싱글레귤러 아이스크림</td>
+                                    <td>31</td>
+                                    <td>발송</td>
+                                    <td>-15%</td>
+                                    <td>3,995</td>
+                                    <td>4,700</td>                                    
+                                    <td class="td-w-200">2024-03-03 오전 10:00</td>
+                                    <td>발송완료</td>
+                                </tr>
+                                <tr>
+                                   <td>2</td>
+                                    <td class="td-long">
+                                        <div class="td-long point-base">[와우패스] 외환전문역 문제복기 이벤트 참여자 기프티콘 발송</div>
+                                    </td>
+                                    <td>wowpass</td>
+                                    <td>[스타벅스] 카페 아메리카노T</td>
+                                    <td>31</td>
+                                    <td>발송</td>
+                                    <td>-15%</td>
+                                    <td>3,995</td>
+                                    <td>4,700</td>                                    
+                                    <td class="td-w-200">2024-03-03 오전 10:00</td>
+                                    <td>발송완료</td>
+                                </tr>
+                                <tr>
+                                   <td>3</td>
+                                    <td class="td-w-300">
+                                        <div class="td-long point-base">
+                                            [와내카] 6월 실습결과물공유 기프티콘 발송 안내
+                                        </div>
+                                    </td>
+                                    <td>wowpass</td>
+                                    <td class="td-w-250">[스타벅스] 카페 아메리카노T</td>
+                                    <td>31</td>
+                                    <td>발송</td>
+                                    <td>-15%</td>
+                                    <td>3,995</td>
+                                    <td>4,700</td>                                    
+                                    <td class="td-w-200">2024-03-03 오전 10:00</td>
+                                    <td>발송완료</td>
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+                    </div>
+                    
+                    <ul class="navi">
+                        <li><<</li>
+                        <li class="on">1</li>
+                        <li>>></li>
+                    </ul>
+                </div>
+                
+            </section>
+        </article>
+    </main>
+
+    
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+
+
+
+});
+</script>
+</body>
+
+</html>
