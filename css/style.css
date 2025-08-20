@@ -1033,6 +1033,7 @@ select {
 }
 .main-common .board-qna .board-write-content {
   margin-top: 10px;
+  height: 300px;
 }
 .main-common .board-qna .board-write-content textarea {
   width: 100% !important;
