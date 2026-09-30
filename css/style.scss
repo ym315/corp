@@ -406,9 +406,10 @@ select{
           >li{
             border-bottom: 1px solid $clcc;
             @include layout(100%,10px 0,10px 0);
-            &:first-child{i{background-position: -194px 2px;}}
-            &:nth-of-type(2){i{background-position: -248px 3px;}}
-            &:nth-of-type(3){i{background-position: -277px 2px;}}
+            &:nth-of-type(1){i{background-position: -194px 2px;}}
+            &:nth-of-type(2){i{background-position: -194px 2px;}}
+            &:nth-of-type(3){i{background-position: -248px 3px;}}
+            &:nth-of-type(4){i{background-position: -277px 2px;}}
             &:last-child{border-bottom: transparent;}
             i{
               width:30px; height:30px; 
@@ -714,7 +715,37 @@ select{
       }
 
   }
+  //260930 추가 상품 리스트
+  .product-list-bg{
+    @include layout(fit-content,10px 0,20px);
+    background: $clwhite;
+    .product-list{
+      width:850px;
+      height:700px;
+      border:1px solid $clcc;
+      >iframe{
+        width: 100%;
+        height:100%;
+        border:transparent;        
+      }      
+    }
+    .product-down{
+      margin-top: 10px;
+      width: 100%;      
+        a{
+          background:$base;
+          display: block;
+          width: 100%;
+          padding:5px;
+          text-align: center;
+          // padding:10px 20px;
+          color:$clwhite;
+          font-weight: bold;
+          border-radius: 5px;
+        }
+      }
 
+  }
 
 //main
 }

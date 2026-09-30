@@ -640,13 +640,16 @@ select {
   margin: 10px 0;
   padding: 10px 0;
 }
-.main-common .main-menu > div .menus > li:first-child i {
+.main-common .main-menu > div .menus > li:nth-of-type(1) i {
   background-position: -194px 2px;
 }
 .main-common .main-menu > div .menus > li:nth-of-type(2) i {
-  background-position: -248px 3px;
+  background-position: -194px 2px;
 }
 .main-common .main-menu > div .menus > li:nth-of-type(3) i {
+  background-position: -248px 3px;
+}
+.main-common .main-menu > div .menus > li:nth-of-type(4) i {
   background-position: -277px 2px;
 }
 .main-common .main-menu > div .menus > li:last-child {
@@ -695,7 +698,6 @@ select {
   padding: 0;
   margin-left: 300px;
   max-width: 1280px;
-  /* 상세 */
 }
 .main-common .main-content .line {
   border-bottom: 1px solid #ccc;
@@ -833,6 +835,9 @@ select {
 }
 .main-common .main-content .table-border {
   border: 1px solid #eee;
+}
+.main-common .main-content {
+  /* 상세 */
 }
 .main-common .main-content .view-case {
   width: 100%;
@@ -1041,4 +1046,35 @@ select {
   height: 300px;
   resize: none;
   border: 1px solid #ccc;
+}
+.main-common .product-list-bg {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px 0;
+  padding: 20px;
+  background: #fff;
+}
+.main-common .product-list-bg .product-list {
+  width: 850px;
+  height: 700px;
+  border: 1px solid #ccc;
+}
+.main-common .product-list-bg .product-list > iframe {
+  width: 100%;
+  height: 100%;
+  border: transparent;
+}
+.main-common .product-list-bg .product-down {
+  margin-top: 10px;
+  width: 100%;
+}
+.main-common .product-list-bg .product-down a {
+  background: #8EAEBE;
+  display: block;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */
